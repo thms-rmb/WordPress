@@ -1,0 +1,37 @@
+/*
+ Theme Name:   Twenty Twentyone Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Twentyone Child Theme
+ Author:       Thomas Rambø
+ Author URI:   http://example.com
+ Template:     twentytwentyone
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentytwentyonechild
+*/
+
+:root {
+    --global--font-size-base: 0.9375rem;
+	--global--font-size-xs: 0.75rem;
+	--global--font-size-sm: 0.84375rem;
+	--global--font-size-md: 0.9375rem;
+	--global--font-size-lg: 1.125rem;
+	--global--font-size-xl: 1.6875rem;
+	--global--font-size-xxl: 3rem;
+	--global--font-size-xxxl: 3.75rem;
+    --global--font-size-page-title: var(--global--font-size-xl);
+}
+
+@media only screen and (min-width: 482px) {
+    :root {
+		--responsive--aligndefault-width: min(calc(100vw - 4 * var(--global--spacing-horizontal)), 800px);
+    }
+}
+
+@media only screen and (min-width: 822px) {
+    :root {
+		--responsive--aligndefault-width: min(calc(100vw - 8 * var(--global--spacing-horizontal)), 800px);
+    }
+}
